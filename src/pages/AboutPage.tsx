@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageType } from '../types';
 import { COMPANY_INFO, WHY_CHOOSE_US } from '../data/stoneData';
+import { CompanyLogo } from '../components/CompanyLogo';
 import { 
   Building2, 
   MapPin, 
@@ -42,13 +43,20 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+          {/* Official Brand Monolith Logo Lockup */}
+          <div className="flex justify-center pb-2">
+            <div className="p-4 sm:p-6 bg-[#161411]/90 rounded-lg border border-[#3A3328] backdrop-blur-sm shadow-2xl inline-block">
+              <CompanyLogo variant="large" showSubtitle={false} />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#24201A] border border-[#C2A379]/40 text-xs font-semibold uppercase tracking-[0.2em] text-[#C2A379]">
             <Compass className="w-3.5 h-3.5" />
             <span>Bhilwara, Rajasthan Heritage • Global Reach</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#FAF7F2]">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#FAF7F2]">
             About TerraStone International
           </h1>
 

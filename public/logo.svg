@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <!-- Royal Blue Gradient for S -->
+    <linearGradient id="tsBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E4E94"/>
+      <stop offset="45%" stop-color="#0A3C74"/>
+      <stop offset="100%" stop-color="#062952"/>
+    </linearGradient>
+
+    <!-- Glossy Highlight for S ribbon -->
+    <linearGradient id="tsHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D7CD1" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0E4E94" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Rock Top Light Gradient -->
+    <linearGradient id="rockTopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67788A"/>
+      <stop offset="100%" stop-color="#505F6F"/>
+    </linearGradient>
+
+    <!-- Terracotta Arc Gradient -->
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#80563B"/>
+      <stop offset="50%" stop-color="#9E7051"/>
+      <stop offset="100%" stop-color="#80563B"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Group for Emblem: Centered horizontally (X center = 300) -->
+  <g transform="translate(160, 40)" filter="url(#softShadow)">
+    
+    <!-- 1. 3D CHISELED STONE MONOLITH BLOCK -->
+    <!-- Back/recessed rock cavity -->
+    <polygon points="42,50 238,50 248,198 32,198" fill="#323C47"/>
+    
+    <!-- Top Chamfer Surface -->
+    <polygon points="12,42 140,28 268,42 238,52 42,52" fill="url(#rockTopGrad)" stroke="#788B9E" stroke-width="1"/>
+    
+    <!-- Left Rock Facets (Rough Chiseled Geometry) -->
+    <polygon points="12,42 42,52 38,98 8,86" fill="#4B5867"/>
+    <polygon points="8,86 38,98 34,148 2,138" fill="#3C4754"/>
+    <polygon points="2,138 34,148 32,198 12,204 4,180" fill="#2E3742"/>
+    <polygon points="32,198 42,198 40,210 16,212 12,204" fill="#252D36"/>
+    
+    <!-- Right Rock Facets (Rough Chiseled Geometry) -->
+    <polygon points="268,42 238,52 242,98 272,86" fill="#586777"/>
+    <polygon points="272,86 242,98 246,148 278,138" fill="#455260"/>
+    <polygon points="278,138 246,148 248,198 268,204 276,180" fill="#36414D"/>
+    <polygon points="248,198 238,198 240,210 264,212 268,204" fill="#28313A"/>
+    
+    <!-- Bottom Rock Facet -->
+    <polygon points="40,210 140,216 240,210 248,198 32,198" fill="#242B33"/>
+
+    <!-- Sharp Beveled White Frame (Opening of the stone block) -->
+    <polyline points="42,52 14,44 140,30 266,44 238,52" fill="none" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="42,52 32,198" fill="none" stroke="#CBD5E1" stroke-width="2.5"/>
+    <polyline points="238,52 248,198" fill="none" stroke="#94A3B8" stroke-width="2.5"/>
+    <polyline points="32,198 140,212 248,198" fill="none" stroke="#64748B" stroke-width="2"/>
+
+    <!-- 2. MONOGRAM "T" -->
+    <!-- Top Horizontal Crossbar of T (Thick crisp white bar) -->
+    <path d="M 40 52 L 140 52 L 140 88 L 102 88 L 102 88 L 40 88 Z" fill="#FFFFFF" />
+    <path d="M 140 52 L 240 52 L 240 88 L 202 88 L 140 88 Z" fill="#FFFFFF" />
+
+    <!-- Vertical Stem of T (Solid Warm Terracotta Earth Stone) -->
+    <!-- Centered: X: 102 to 142, Y: 88 to 206 -->
+    <rect x="102" y="88" width="40" height="118" fill="#94684A" stroke="#FFFFFF" stroke-width="4"/>
+
+    <!-- 3. MONOGRAM "S" (Intertwined Royal Blue Ribbon with thick white boundary) -->
+    <!-- Thick White Isolation Background for S -->
+    <path d="M 180 52 
+             C 215 52, 236 74, 236 102 
+             L 174 102 
+             C 174 88, 166 78, 150 78 
+             C 134 78, 126 86, 126 98 
+             C 126 114, 142 124, 172 136 
+             C 214 152, 238 172, 238 206 
+             C 238 238, 208 260, 164 260 
+             C 118 260, 94 234, 92 198 
+             L 152 198 
+             C 154 216, 166 226, 184 226 
+             C 198 226, 208 218, 208 204 
+             C 208 190, 196 182, 166 170 
+             C 124 154, 96 136, 96 98 
+             C 96 66, 128 52, 180 52 Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="12" 
+          stroke-linejoin="round"
+          stroke-linecap="round"
+    />
+
+    <!-- S Main Body in Royal Blue Gradient -->
+    <path d="M 174 52 
+             H 232 
+             V 102 
+             H 174 
+             C 174 88, 166 78, 150 78 
+             C 134 78, 126 86, 126 98 
+             C 126 114, 142 124, 172 136 
+             C 214 152, 236 172, 236 206 
+             C 236 236, 208 256, 166 256 
+             C 122 256, 96 234, 94 198 
+             L 148 198 
+             C 150 216, 162 224, 178 224 
+             C 192 224, 204 216, 204 204 
+             C 204 190, 194 182, 164 170 
+             C 122 154, 98 136, 98 98 
+             C 98 68, 126 52, 174 52 Z" 
+          fill="url(#tsBlueGradient)" 
+          stroke="#FFFFFF" 
+          stroke-width="5"
+          stroke-linejoin="miter"
+    />
+
+    <!-- Inner Glossy Curved Highlight Ribbon on S -->
+    <path d="M 126 98 
+             C 126 114, 142 124, 172 136 
+             C 214 152, 236 172, 236 206" 
+          fill="none" 
+          stroke="url(#tsHighlight)" 
+          stroke-width="10" 
+          stroke-linecap="round"
+          opacity="0.85"
+    />
+
+    <!-- Clean Cut Accent for S top right arm -->
+    <rect x="174" y="52" width="60" height="50" fill="url(#tsBlueGradient)" stroke="#FFFFFF" stroke-width="4"/>
+    <rect x="174" y="52" width="60" height="50" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+
+  </g>
+
+  <!-- 4. CURVED HORIZON ARC (Sweeping Terracotta Earth) -->
+  <path d="M 80 320 
+           Q 300 248 520 320 
+           Q 300 262 80 320 Z" 
+        fill="url(#terracottaGrad)"
+  />
+
+  <!-- 5. TYPOGRAPHY: "TERRA STONE" -->
+  <text x="300" y="395" 
+        text-anchor="middle" 
+        fill="#2B3847" 
+        font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" 
+        font-size="44" 
+        font-weight="800" 
+        letter-spacing="0.12em">
+    TERRA STONE
+  </text>
+
+  <!-- 6. TYPOGRAPHY: "• INTERNATIONAL •" -->
+  <g transform="translate(300, 442)">
+    <!-- Left Dot -->
+    <circle cx="-168" cy="-7" r="4.5" fill="#9E7051"/>
+    
+    <!-- INTERNATIONAL Text -->
+    <text x="0" y="0" 
+          text-anchor="middle" 
+          fill="#0C4887" 
+          font-family="'Montserrat', 'Inter', 'Segoe UI', sans-serif" 
+          font-size="24" 
+          font-weight="800" 
+          letter-spacing="0.32em">
+      INTERNATIONAL
+    </text>
+
+    <!-- Right Dot -->
+    <circle cx="168" cy="-7" r="4.5" fill="#9E7051"/>
+  </g>
+</svg>
